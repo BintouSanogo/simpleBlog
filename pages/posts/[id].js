@@ -34,10 +34,10 @@ const Post = ({ data }) => {
   const router = useRouter();
   const { id} = router.query;
   return(
-    <div>
-      <h1>Id:{data.id}</h1>
-      <h1>Title:{data.title}</h1>
-      <p>Body:{data.body}</p>
+    <div className=" text-xl pt-6 pl-2 text-center font-serif bg-center  border-l-4 border-cyan-500 ">
+      <h1 className="">Id:{data.id}</h1>
+      <h1 className="hover:text-cyan-600 mb-8 text-2xl" >{data.title}</h1>
+      <p>{data.body}</p>
     </div>
   )
 };
